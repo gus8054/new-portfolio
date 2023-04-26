@@ -25,7 +25,7 @@ const Projects = () => {
           return (
             <GridItemContainer key={idx} onClick={() => setSelectedTech(item.title)}>
               <GridItem type="button">
-                <img src={item.img} alt={item.title} style={{ scale: 1.05 }} />
+                <img src={item.img} alt={item.title} style={{ scale: "1.03" }} />
               </GridItem>
               <Span>{item.title}</Span>
             </GridItemContainer>

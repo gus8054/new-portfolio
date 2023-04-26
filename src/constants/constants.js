@@ -12,6 +12,7 @@ const reduxImg = "/images/redux.webp";
 const tailwindCSSImg = "/images/tailwindcss.webp";
 const typescriptImg = "/images/typescript.webp";
 const viteImg = "/images/vite.webp";
+const styledComponentsImg = "/images/styledcomponents.webp";
 
 export const about = `
 4년제 소프트웨어 공학과 학과 수석 졸업하였고 블록체인, AI 교육 프로그램을 이수한 경험이 있습니다.
@@ -147,6 +148,17 @@ export const projects = {
         demo: "https://gus8054.github.io/modern-webpage3/#home",
       },
     },
+    {
+      img: "https://velog.velcdn.com/images/ehdgus8054/post/b165d1af-f65e-4566-b548-74c060a85d77/image.png",
+      title: "New 포트폴리오",
+      detail: "인터렉티브한 포트폴리오를 만들어보고자 제작했습니다.",
+      tags: ["html", "css", "RWD", "js", "react", "react-icons", "styled components", "next.js", "reqeustAnimationFrame API"],
+      link: {
+        github: "https://github.com/gus8054/new-portfolio",
+        velog: "https://velog.io/@ehdgus8054/Modern-website-3",
+        demo: "/",
+      },
+    },
   ],
 };
 export const techLogos = [
@@ -193,6 +205,10 @@ export const techLogos = [
   {
     title: "vite",
     img: viteImg,
+  },
+  {
+    title: "styled components",
+    img: styledComponentsImg,
   },
 ];
 

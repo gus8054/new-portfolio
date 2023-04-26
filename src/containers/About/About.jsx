@@ -8,13 +8,10 @@ const About = () => {
   let requestId;
   const mouseMoveHandler = (e) => {
     const box = e.currentTarget;
-    const x = e.clientX;
-    const y = e.clientY;
-    const boxRect = box.getBoundingClientRect();
-    const boxCenterX = boxRect.left + boxRect.width / 2;
-    const boxCenterY = boxRect.top + boxRect.height / 2;
-    const deltaX = x - boxCenterX;
-    const deltaY = y - boxCenterY;
+    const x = e.nativeEvent.offsetX;
+    const y = e.nativeEvent.offsetY;
+    const deltaX = x - box.clientWidth / 2;
+    const deltaY = y - box.clientHeight / 2;
     const rotateX = deltaY / 10;
     const rotateY = -deltaX / 10;
 
@@ -25,10 +22,7 @@ const About = () => {
   };
   const mouseOutHandler = (e) => {
     const box = e.currentTarget;
-    cancelAnimationFrame(requestId);
-    requestId = requestAnimationFrame(() => {
-      box.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
-    });
+    box.style.transform = `perspective(2000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1)`;
   };
   return (
     <InView>
