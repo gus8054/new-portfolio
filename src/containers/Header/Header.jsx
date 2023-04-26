@@ -1,10 +1,9 @@
-import React from "react";
 import { Container, Div1, H1, H2, LeftBar, Section, UpDown } from "./HeaderStyle";
 import { IntroMyself, Layout } from "@/components";
 
 const Header = () => {
   return (
-    <Section>
+    <Section id="home">
       <Layout>
         <Container>
           <LeftBar />

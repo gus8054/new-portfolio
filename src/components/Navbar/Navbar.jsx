@@ -1,14 +1,12 @@
 import { logo } from "@/constants/constants";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
+import { useState } from "react";
 import { Container, Div1, Div2, Div3, Icon1, Icon2, Logo, LogoText, MenuBox, MenuIcon, NavLink, NavLinks } from "./NavbarStyle";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [menuBoxRender, setMenuBoxRender] = useState(false);
   return (
     <Container>
-      <Div1 as={Link} href="/">
+      <Div1 as="a" href="/">
         <Logo>
           <img src={logo} alt={logo} />
         </Logo>
@@ -18,7 +16,6 @@ const Navbar = () => {
         <MenuIcon
           onClick={() => {
             setIsMenuOpen((prev) => !prev);
-            // setMenuBoxRender(true);
           }}>
           <Icon1 />
           <Icon2 $isMenuOpen={isMenuOpen} />

@@ -1,6 +1,5 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { BiMenuAltLeft, BiLeftArrowAlt } from "react-icons/bi";
-import Link from "next/link";
 
 export const Container = styled.div`
   padding: 1rem 0;
@@ -73,7 +72,7 @@ export const NavLinks = styled.nav`
   display: flex;
   flex-direction: column;
 `;
-export const NavLink = styled(Link)`
+export const NavLink = styled.a`
   padding: 1rem;
   color: ${(props) => props.theme.color.white};
   font-weight: bold;

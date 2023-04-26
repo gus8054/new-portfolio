@@ -1,4 +1,4 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 import { FcGlobe } from "react-icons/fc";
 
 export const Tech = styled.div`

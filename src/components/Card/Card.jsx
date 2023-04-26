@@ -1,5 +1,6 @@
-import { GithubIcon, Icon, ImgContainer, Overlay, Tag, Tags, TextContent } from "./CardStyle";
+import { Icon, ImgContainer, Overlay, Tag, Tags, TextContent } from "./CardStyle";
 import { SiVelog, SiGithub, SiAirplayaudio } from "react-icons/si";
+
 const ProjectCard = (props) => {
   return (
     <article {...props}>

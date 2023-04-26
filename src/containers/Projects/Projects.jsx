@@ -1,7 +1,7 @@
 import { ProjectCardStyle } from "@/components/Card/CardStyle";
 import { techLogos, projects as myProjects } from "@/constants/constants";
 import HeaderTextContent from "@/styles/globalComponents/HeaderTextContent";
-import React, { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { AllIcon, Cards, Container, GridItem, GridItemContainer, Span, Tech, TextContent } from "./ProjectsStyle";
 
 const Projects = () => {
@@ -10,7 +10,7 @@ const Projects = () => {
   const projects = useMemo(() => myProjects, []);
 
   return (
-    <Container>
+    <Container id="projects">
       <TextContent>
         <HeaderTextContent intro="MY WORK" title="Projects" detail={projects.about} />
       </TextContent>
@@ -32,7 +32,6 @@ const Projects = () => {
           );
         })}
       </Tech>
-      {/* <Cards>{selectedTech === "all" ? projects.projectList.map((project, idx) => <ProjectCardStyle key={idx} {...project} />) : projects.projectList.filter((project) => project.tags.includes(selectedTech))}</Cards> */}
       <Cards>
         {projects.projectList
           .filter((project) => {

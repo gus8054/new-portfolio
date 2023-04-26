@@ -1,9 +1,9 @@
 import { myPhoto } from "@/constants/constants";
-import React from "react";
 import { Container, ImgContainer, ImgContent, MouseBox, TextContent } from "./AboutStyle";
 import { InView } from "react-intersection-observer";
 import HeaderTextContent from "@/styles/globalComponents/HeaderTextContent";
 import { about } from "@/constants/constants";
+
 const About = () => {
   let requestId;
   const mouseMoveHandler = (e) => {
@@ -33,7 +33,7 @@ const About = () => {
   return (
     <InView>
       {({ inView, ref }) => (
-        <Container>
+        <Container id="about">
           <TextContent>
             <HeaderTextContent intro="INTRODUCTION" title="Overview." detail={about} />
           </TextContent>

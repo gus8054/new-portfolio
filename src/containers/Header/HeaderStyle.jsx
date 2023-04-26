@@ -3,7 +3,7 @@ import { programmer } from "@/constants/constants";
 
 export const Section = styled.section`
   display: flow-root;
-  height: calc(100vh - 106.531px);
+  height: calc(100svh - 106.531px);
   background: url(${programmer});
   background-repeat: no-repeat;
   background-size: cover;
