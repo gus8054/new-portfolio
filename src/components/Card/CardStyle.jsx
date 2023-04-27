@@ -8,10 +8,18 @@ export const Overlay = styled.div`
   justify-content: center;
   gap: 2rem;
   position: absolute;
-  inset: 0;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
   transition: all 0.2s ease-in-out;
   background: rgba(0, 0, 0, 0.5);
   animation: ${(props) => props.theme.animation.focusIn} 0.2s linear both;
+  @media (pointer: none) {
+    height: 20%;
+    flex-direction: row;
+    line-height: 0;
+  }
 `;
 
 export const ProjectCardStyle = styled(ProjectCard)`
