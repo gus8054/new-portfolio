@@ -15,10 +15,21 @@ export const Overlay = styled.div`
   transition: all 0.2s ease-in-out;
   background: rgba(0, 0, 0, 0.5);
   animation: ${(props) => props.theme.animation.focusIn} 0.2s linear both;
-  @media (pointer: none) {
-    height: 20%;
+  @media (hover: none) and (pointer: coarse) {
+    display: flex;
+    top: unset;
+    bottom: 2rem;
+    height: 2rem;
+    background-color: ${(props) => props.theme.color.navy};
+    border-radius: 10px;
     flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2rem;
     line-height: 0;
+    margin-left: auto;
+    & svg {
+      font-size: 2rem;
+    }
   }
 `;
 
@@ -31,6 +42,9 @@ export const ProjectCardStyle = styled(ProjectCard)`
   position: relative;
   :hover ${Overlay} {
     display: flex;
+  }
+  @media (hover: none) and (pointer: coarse) {
+    padding-bottom: 6rem;
   }
 `;
 export const ImgContainer = styled.div`
