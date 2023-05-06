@@ -15,7 +15,7 @@ export const Overlay = styled.div`
   transition: all 0.2s ease-in-out;
   background: rgba(0, 0, 0, 0.5);
   animation: ${(props) => props.theme.animation.focusIn} 0.2s linear both;
-  @media (hover: none) and (pointer: coarse) {
+  @media (hover: none) {
     display: flex;
     top: unset;
     bottom: 2rem;
@@ -43,7 +43,7 @@ export const ProjectCardStyle = styled(ProjectCard)`
   :hover ${Overlay} {
     display: flex;
   }
-  @media (hover: none) and (pointer: coarse) {
+  @media (hover: none) {
     padding-bottom: 6rem;
   }
 `;

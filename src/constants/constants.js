@@ -13,6 +13,7 @@ const tailwindCSSImg = "/images/tailwindcss.webp";
 const typescriptImg = "/images/typescript.webp";
 const viteImg = "/images/vite.webp";
 const styledComponentsImg = "/images/styledcomponents.webp";
+const reactRouterImg = "/images/reactRouter.webp";
 
 export const about = `
 4년제 소프트웨어 공학과 학과 수석 졸업하였고 블록체인, AI 교육 프로그램을 이수한 경험이 있습니다.
@@ -155,8 +156,19 @@ export const projects = {
       tags: ["html", "css", "RWD", "js", "react", "react-icons", "styled components", "next.js", "reqeustAnimationFrame API"],
       link: {
         github: "https://github.com/gus8054/new-portfolio",
-        velog: "https://velog.io/@ehdgus8054/Modern-website-3",
+        velog: "https://velog.io/@ehdgus8054/New-%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4#%EA%B2%B0%EA%B3%BC%EB%AC%BC",
         demo: "/",
+      },
+    },
+    {
+      img: "https://velog.velcdn.com/images/ehdgus8054/post/54706ec6-1efa-4c11-afe9-2e7743338710/image.png",
+      title: "모바일 유튜브",
+      detail: "Fetch API로 외부 데이터를 가져와 렌더링을 하는 일련의 작업을 수행해보고자 제작했습니다.",
+      tags: ["html", "css", "js", "react", "react-icons", "react router", "CSS Module", "vite", "Fetch API"],
+      link: {
+        github: "https://github.com/gus8054/youtube-mobile",
+        velog: "https://velog.io/@ehdgus8054/Youtube-Mobile-%ED%81%B4%EB%A1%A0-%EC%BD%94%EB%94%A9",
+        demo: "https://main--lambent-flan-e10d5b.netlify.app/",
       },
     },
   ],
@@ -209,6 +221,10 @@ export const techLogos = [
   {
     title: "styled components",
     img: styledComponentsImg,
+  },
+  {
+    title: "react router",
+    img: reactRouterImg,
   },
 ];
 
