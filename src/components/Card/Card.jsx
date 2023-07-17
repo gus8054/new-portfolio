@@ -23,9 +23,11 @@ const ProjectCard = (props) => {
         <Icon href={props.link.velog}>
           <SiVelog />
         </Icon>
-        <Icon href={props.link.demo}>
-          <SiAirplayaudio />
-        </Icon>
+        {props.link.demo && (
+          <Icon href={props.link.demo}>
+            <SiAirplayaudio />
+          </Icon>
+        )}
       </Overlay>
     </article>
   );

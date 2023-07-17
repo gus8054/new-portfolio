@@ -14,6 +14,8 @@ const typescriptImg = "/images/typescript.webp";
 const viteImg = "/images/vite.webp";
 const styledComponentsImg = "/images/styledcomponents.webp";
 const reactRouterImg = "/images/reactRouter.webp";
+const jwtImg = "/images/jwt.webp";
+const mysqlImg = "/images/mysql.webp";
 
 export const about = `
 4년제 소프트웨어 공학과 학과 수석 졸업하였고 블록체인, AI 교육 프로그램을 이수한 경험이 있습니다.
@@ -171,6 +173,27 @@ export const projects = {
         demo: "https://main--lambent-flan-e10d5b.netlify.app/",
       },
     },
+    {
+      img: "https://velog.velcdn.com/images/ehdgus8054/post/a440e4da-d395-447d-8230-10e212329285/image.PNG",
+      title: "삼성 노트 클론",
+      detail: "express 라이브러리를 사용하지 않은 순수 node.js로 서버를 만들고 IndexedDB 웹 저장소로 데이터를 관리해보았습니다.",
+      tags: ["html", "css", "js", "node.js", "Web Storage API"],
+      link: {
+        github: "https://github.com/gus8054/samsung-note-clone",
+        velog: "https://velog.io/@ehdgus8054/%EC%82%BC%EC%84%B1-%EB%85%B8%ED%8A%B8-%ED%81%B4%EB%A1%A0",
+        demo: "https://main--incredible-truffle-fb8504.netlify.app/",
+      },
+    },
+    {
+      img: "https://velog.velcdn.com/images/ehdgus8054/post/128e645a-80b1-4431-bcae-bde75ab5fae1/image.png",
+      title: "블로그",
+      detail: "프론트 엔드와 백 엔드를 분리시켜 개발하고 api로 통신하는 CRUD 프로젝트입니다. Mysql로 데이터를 관리해보았습니다.",
+      tags: ["html", "css", "js", "react", "react-icons", "react router", "axios", "node.js", "express", "jwt", "mysql"],
+      link: {
+        github: "https://github.com/gus8054/blog",
+        velog: "https://velog.io/@ehdgus8054/%EB%B8%94%EB%A1%9C%EA%B7%B8",
+      },
+    },
   ],
 };
 export const techLogos = [
@@ -225,6 +248,14 @@ export const techLogos = [
   {
     title: "react router",
     img: reactRouterImg,
+  },
+  {
+    title: "jwt",
+    img: jwtImg,
+  },
+  {
+    title: "mysql",
+    img: mysqlImg,
   },
 ];
 
