@@ -194,6 +194,17 @@ export const projects = {
         velog: "https://velog.io/@ehdgus8054/%EB%B8%94%EB%A1%9C%EA%B7%B8",
       },
     },
+    {
+      img: "https://velog.velcdn.com/images/ehdgus8054/post/8cfbf7d3-a859-480d-8b78-d05213d1cacf/image.png",
+      title: "TODO 타입스크립트 앱",
+      detail: "타입스크립트로 만든 todo앱입니다. 싱글톤 패턴을 이용했습니다.",
+      tags: ["html", "css", "js", "typescript", "vite", "Web Storage API"],
+      link: {
+        github: "https://github.com/gus8054/todo-typescript",
+        velog: "https://velog.io/@ehdgus8054/TODO-%ED%83%80%EC%9E%85%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8-%EC%95%B1",
+        demo: "https://gus8054.github.io/todo-typescript/",
+      },
+    },
   ],
 };
 export const techLogos = [
