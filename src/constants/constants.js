@@ -187,11 +187,12 @@ export const projects = {
     {
       img: "https://velog.velcdn.com/images/ehdgus8054/post/128e645a-80b1-4431-bcae-bde75ab5fae1/image.png",
       title: "블로그",
-      detail: "프론트 엔드와 백 엔드를 분리시켜 개발하고 api로 통신하는 CRUD 프로젝트입니다. Mysql로 데이터를 관리해보았습니다.",
+      detail: "프론트 엔드와 백 엔드를 분리시켜 개발하고 api로 통신하는 CRUD 프로젝트입니다. Mysql로 데이터를 관리해보았습니다.AWS로 배포했습니다.",
       tags: ["html", "css", "js", "react", "react-icons", "react router", "axios", "node.js", "express", "jwt", "mysql"],
       link: {
         github: "https://github.com/gus8054/blog",
         velog: "https://velog.io/@ehdgus8054/%EB%B8%94%EB%A1%9C%EA%B7%B8",
+        demo: "http://ec2-15-164-214-193.ap-northeast-2.compute.amazonaws.com:5000/",
       },
     },
     {
